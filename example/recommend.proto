@@ -1,0 +1,28 @@
+syntax = "proto3";
+option go_package = "./pb";
+package recommend;
+
+message Product {
+  int64 id = 1; // Product ID
+  string name = 2; // Product Name
+  string desc = 3; // Product Description
+  double price = 4; // Product Price
+  int64 stock = 5; // Product Stock
+  int64 category = 6; // Product Category
+  int64 status = 7; // Product Status
+  int64 create_time = 8; // Product Creation Time
+  int64 update_time = 9; // Product Update Time
+}
+
+message getRecommendReq {
+  int64 cursor = 1; // Cursor
+  int64 ps = 2; // Items per page
+}
+message getRecommendResp {
+  repeated Product product = 1; // List of Product Information
+  int64 is_end = 2; // Is this the last page?
+  int64 recommend_time = 3; // Recommendation time of the last product in the list
+}
+service Recommend {
+  rpc getRecommend(getRecommendReq) returns (getRecommendResp); // Get User Recommendations
+}

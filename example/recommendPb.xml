@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../pkg/xml/style.xsl"?>
+
+<rpc>
+    <type name="Product" desc="Product Information">
+        <field type="int64" name="id" desc="Product ID"/>
+        <field type="string" name="name" desc="Product Name"/>
+        <field type="string" name="desc" desc="Product Description"/>
+        <field type="float64" name="price" desc="Product Price"/>
+        <field type="int64" name="stock" desc="Product Stock"/>
+        <field type="int64" name="category" desc="Product Category"/>
+        <field type="int64" name="status" desc="Product Status"/>
+        <field type="int64" name="create_time" desc="Product Creation Time"/>
+        <field type="int64" name="update_time" desc="Product Update Time"/>
+    </type>
+
+    <serv name="Recommend">
+        <method name="getRecommend" desc="Get User Recommendations">
+            <req>
+                <field type="int64" name="cursor" desc="Cursor"/>
+                <field type="int64" name="ps" desc="Items per page"/>
+            </req>
+            <resp>
+                <loop type="Product" name="product" desc="List of Product Information"/>
+                <field type="int64" name="is_end" desc="Is this the last page?"/>
+                <field type="int64" name="recommend_time" desc="Recommendation time of the last product in the list"/>
+            </resp>
+        </method>
+    </serv>
+</rpc>
