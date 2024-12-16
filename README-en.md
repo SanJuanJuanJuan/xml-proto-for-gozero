@@ -28,7 +28,7 @@ You can refer to the format of the XML files and the generated Proto files in th
 1. Make sure Python is installed, and the version is Python 3.x.
 2. Clone the project and navigate to the project directory:
    ```bash
-   git clone <https://github.com/SanJuanJuanJuan/xml-proto-for-gozero.git>
+   git clone https://github.com/SanJuanJuanJuan/xml-proto-for-gozero.git
    cd xml-proto-for-gozero
 
 ## Notes
