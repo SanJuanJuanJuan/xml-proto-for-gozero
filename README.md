@@ -29,7 +29,7 @@
 1. 确保 Python 已安装，且版本为 Python 3.x。
 2. 克隆项目并进入项目目录：
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/SanJuanJuanJuan/xml-proto-for-gozero.git>
    cd xml-proto-for-gozero
    ```
 
