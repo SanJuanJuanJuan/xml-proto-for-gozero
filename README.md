@@ -32,6 +32,12 @@
    git clone https://github.com/SanJuanJuanJuan/xml-proto-for-gozero.git
    cd xml-proto-for-gozero
    ```
+3. 将项目中的`xml-proto-for-gozero.py`文件复制到你的项目中；
+4. 在项目目录中执行以下命令：
+   ```bash
+   python xml-proto-for-gozero.py
+   ```
+   脚本将会自动解析项目中所有路径下的`*Pb.xml`文件，并原地生成对应的`*.proto`文件。
 
 ## 注意
 1. 想要可视化打开xml文件，推荐使用chrome 浏览器，并在快捷方式中添加`--allow-file-access-from-files`参数

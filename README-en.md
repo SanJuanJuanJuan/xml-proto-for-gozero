@@ -25,11 +25,17 @@ You can refer to the format of the XML files and the generated Proto files in th
 - xml-proto-for-gozero.py: The script for generating the Proto files
 
 ## Installation and Usage
-1. Make sure Python is installed, and the version is Python 3.x.
+1. Ensure that Python is installed and the version is Python 3.x.
 2. Clone the project and navigate to the project directory:
    ```bash
    git clone https://github.com/SanJuanJuanJuan/xml-proto-for-gozero.git
    cd xml-proto-for-gozero
+   ```
+3. Copy the xml-proto-for-gozero.py file from the project to your own project.
+4. Run the following command in your project directory:
+    ```bash
+   python xml-proto-for-gozero.py
+   ```
 
 ## Notes
 1. To visualize the XML file, it is recommended to use the Chrome browser and add the `--allow-file-access-from-files` flag to the shortcut.
